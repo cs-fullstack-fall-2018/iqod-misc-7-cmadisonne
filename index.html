@@ -11,36 +11,37 @@
     function binary(num) {
         let answer = num.toString();
         answer = answer.split('');
-        let convertAnswer;
+        let convertAnswer=0;
         if (answer[0] = 0){
-            convertAnswer = 0;
+            convertAnswer += 0;
         }
-        else {
-            convertAnswer = 8;
+        else if(answer[0] = 1) {
+            convertAnswer += 8;
         }
 
         if (answer[1] = 0){
             convertAnswer += 0;
         }
-        else {
+        else if(answer[1] = 1){
             convertAnswer += 4;
         }
 
         if (answer[2] = 0){
             convertAnswer += 0;
         }
-        else {
+        else if(answer[2] = 1){
             convertAnswer += 2;
         }
 
         if (answer[3] = 0){
             convertAnswer += 0;
         }
-        else {
+        else if(answer[3] = 1){
             convertAnswer += 1;
         }
 
-        console.log(convertAnswer)
+        console.log(convertAnswer);
+        console.log(answer);
     }
     binary(num);
 </script>
