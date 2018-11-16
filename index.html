@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const num = 1111;
+    function binary(num) {
+        let answer = num.toString();
+        answer = answer.split('');
+        let convertAnswer;
+        if (answer[0] = 0){
+            convertAnswer = 0;
+        }
+        else {
+            convertAnswer = 8;
+        }
+
+        if (answer[1] = 0){
+            convertAnswer += 0;
+        }
+        else {
+            convertAnswer += 4;
+        }
+
+        if (answer[2] = 0){
+            convertAnswer += 0;
+        }
+        else {
+            convertAnswer += 2;
+        }
+
+        if (answer[3] = 0){
+            convertAnswer += 0;
+        }
+        else {
+            convertAnswer += 1;
+        }
+
+        console.log(convertAnswer)
+    }
+    binary(num);
+</script>
+
+</body>
+</html>
